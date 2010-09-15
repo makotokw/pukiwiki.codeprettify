@@ -11,8 +11,9 @@
  */
 function plugin_codeprettify_convert() {
     $args   = func_get_args(); 
-    $src = htmlspecialchars(rtrim(end($args)));
-    return '<pre class="prettyprint">'.$src.'</pre>';
+    $src = htmlspecialchars(rtrim(array_pop($args)));
+    $opt = ' '.implode(' ', $args);
+    return '<pre class="prettyprint'.$opt.'">'.$src.'</pre>';
 }
 function plugin_codeprettify_inline() {
     $args   = func_get_args();
