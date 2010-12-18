@@ -10,15 +10,21 @@
  * @version     1.0
  */
 function plugin_codeprettify_convert() {
-    $args   = func_get_args(); 
-    $src = htmlspecialchars(rtrim(array_pop($args)));
-    $opt = ' '.implode(' ', $args);
-    return '<pre class="prettyprint'.$opt.'">'.$src.'</pre>';
+	$args   = func_get_args();
+	$src = htmlspecialchars(rtrim(array_pop($args)));
+	$cls = 'prettyprint';
+	if ($add_cls = array_shift($args)) {
+		$cls .= ' '.$add_cls;
+	}
+	return '<pre class="'.$cls.'">'.$src.'</pre>';
 }
 function plugin_codeprettify_inline() {
-    $args   = func_get_args();
-    $src = array_pop($args); 
-    $opt = ' '.implode(' ', $args);
-    return '<pre class="prettyprint'.$opt.'">'.$src.'</pre>';
+	$args   = func_get_args();
+	$src = array_pop($args);
+	$cls = 'prettyprint';
+	if ($add_cls = array_shift($args)) {
+		$cls .= ' '.$add_cls;
+	}
+	return '<pre class="'.$cls.'">'.$src.'</pre>';
 }
 ?>

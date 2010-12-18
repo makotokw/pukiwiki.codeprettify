@@ -65,9 +65,27 @@ How to use
 ---------
 
     &codeprettify{<?php echo 'test'; ?>};
+    
+
+cssクラスの追加
+----------
+
+google-code-prettifyでは言語の指定や、行数の表示がcssクラスの指定で行えます。 
+codeprettifyプラグインでは関数の第一引数で追加するcssクラス指定できます。
+
+    #codeprettify(lang-html linenums:4){{
+    <body>
+    <h1>codeprettify</h1>
+    </body>
+    </html>
+    }}
 
 History
 =======
+
+v1.1 at 2010/12/19
+------------------
+ - google-code-prettifyのオプション指定のためにcssクラスの追加に対応
 
 v1.0 at 2008/09/25
 ------------------
@@ -83,5 +101,5 @@ Copyright and Software License
 
 <http://www.gnu.org/licenses/gpl.html>  GPLv2
 
-Copyright 2008, makoto_kw (<http://www.makotokw.com>)
+Copyright 2008-2010, makoto_kw (<http://www.makotokw.com>)
 
