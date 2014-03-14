@@ -80,26 +80,16 @@ codeprettifyプラグインでは関数の第一引数で追加するcssクラ�
     </html>
     }}
 
-History
-=======
-
-v1.1 at 2010/12/19
-------------------
- - google-code-prettifyのオプション指定のためにcssクラスの追加に対応
-
-v1.0 at 2008/09/25
-------------------
- - 初リリース
 
 See Also
 ========
 - <http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/codeprettify.inc.php>
 
 
-Copyright and Software License
+License
 ==============================
 
 <http://www.gnu.org/licenses/gpl.html>  GPLv2
 
-Copyright 2008-2010, makoto_kw (<http://www.makotokw.com>)
+Copyright 2008-2010　Makoto Kawasaki
 
